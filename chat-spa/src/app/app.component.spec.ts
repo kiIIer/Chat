@@ -17,10 +17,10 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'chat-spa'`, async(() => {
+  it(`should have as title 'Chat'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('chat-spa');
+    expect(app.title).toEqual('Chat');
   }));
   // it('should render title in a h1 tag', async(() => {
   //   const fixture = TestBed.createComponent(AppComponent);
