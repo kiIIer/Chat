@@ -1,0 +1,10 @@
+<div *ngIf="!(auth.user | async); else alreadyLoggedIn">
+  <h3>Social Login</h3>
+  <button (click)="signInWithGoogle()">Connect Google</button>
+  <button (click)="signInWithFacebook()">Connect Facebook</button>
+</div>
+
+<ng-template #alreadyLoggedIn>
+  <p>You are logged in, {{(auth.user|async)?.displayName}}</p>
+  <button (click)="signOut()">Log out</button>
+</ng-template>
